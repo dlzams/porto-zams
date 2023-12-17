@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+  overflow: hidden; /* Hide scrollbars */
+  cursor: wait;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Show scrollbars on mobile devices */
+  body {
+    overflow: auto;
+  }
+}

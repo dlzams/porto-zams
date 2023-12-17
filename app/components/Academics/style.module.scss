@@ -1,0 +1,175 @@
+.projects {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  flex-direction: column;
+  margin-top: 300px;
+
+  .body {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .modalContainer {
+    height: 350px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .modalSlider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal img {
+    height: auto;
+  }
+
+  .cursor,
+  .cursorLabel {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #455ce9;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    pointer-events: none;
+  }
+
+  .cursorLabel {
+    background-color: transparent;
+  }
+
+  .circleContainer {
+    background-color: red;
+    position: relative;
+    margin-top: 50px; /* Adjust the margin for smaller devices */
+
+    .circle {
+      height: 1500%;
+      width: 100%; /* Adjust the width for responsiveness */
+      border-radius: 0 0 50% 50%;
+      background-color: white;
+      z-index: 1;
+      position: absolute;
+      box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+    }
+  }
+
+  .projectDetails {
+    padding: 4px;
+  }
+  @media (max-width: 768px) {
+    .projects {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      flex-direction: column;
+      margin-top: 100px; /* Adjust the margin for smaller devices */
+
+      .body {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px; /* Adjust the margin for smaller devices */
+      }
+
+      .modalContainer {
+        height: 250px; /* Adjust the height for smaller devices */
+        width: 300px; /* Adjust the width for smaller devices */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: white;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 3;
+      }
+
+      .modalSlider {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+
+      .modal {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal img {
+        height: auto;
+        max-width: 100%; /* Ensure images are responsive */
+      }
+
+      .cursor,
+      .cursorLabel {
+        width: 60px; /* Adjust the width for smaller devices */
+        height: 60px; /* Adjust the height for smaller devices */
+        border-radius: 50%;
+        background-color: #455ce9;
+        color: white;
+        position: fixed;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px; /* Adjust the font size for smaller devices */
+        font-weight: 300;
+        pointer-events: none;
+      }
+
+      .cursorLabel {
+        background-color: transparent;
+      }
+
+      .modalContainer {
+        height: 200px;
+        width: 250px;
+      }
+
+      .cursor,
+      .cursorLabel {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+      }
+    }
+  }
+}
