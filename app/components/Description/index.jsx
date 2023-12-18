@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import Rounded from "../../common/RoundedButton";
 export default function Description() {
   const phrase =
-    "I'm a computer science undergraduate student with a strong commitment to learning and good teamwork skills. I've been involved in website development projects and have experience with Laravel, React.js, and MySQL. I'm also familiar with programming languages like Python, C++, Java, and Go.";
+    "I'm a computer science undergraduate student with a strong commitment to learning and good teamwork skills. I've been involved in website development projects and have experience with Laravel, Reactjs, Nextjs, and MySQL. I'm also familiar with programming languages like Python, C++, Java, and Go.";
   const description = useRef(null);
   const isInView = useInView(description);
   return (

@@ -7,6 +7,7 @@
   .body {
     max-width: 1400px;
     display: flex;
+    flex-direction: column; /* Added to stack content vertically */
     gap: 50px;
     position: relative;
     p {
@@ -15,6 +16,7 @@
         font-size: 36px;
         gap: 8px;
         line-height: 1.3;
+        text-align: justify; /* Center text horizontally */
         span {
           margin-right: 3px;
         }

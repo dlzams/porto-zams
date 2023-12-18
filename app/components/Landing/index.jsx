@@ -48,7 +48,7 @@ export default function Landing() {
       animate="enter"
       className={styles.landing}
     >
-      <Image src="/images/DarkGrey.jpg" fill={true} alt="background" />
+      <Image src="/images/GreyBG.png" fill={true} alt="background" />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Muhammad Azzam</p>
